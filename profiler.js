@@ -277,7 +277,7 @@ var profiler = profiler || (function () {
         benchmark: {
 
             benchmark_fast_function: function (/* String */func_or_name, /* Function */callback, /* Function */next) {
-                var res, owner, func, runs = [], r = 0, n;
+                var res, owner, func, func_name, runs = [], r = 0, n;
 
                 if (typeof func_or_name === "function") {
                     owner = null;
